@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.carparkingapp.ui.SplashFragment"
+        android:label="fragment_splash"
+        tools:layout="@layout/fragment_splash" >
+        <action
+            android:id="@+id/action_splashFragment_to_appInfoFragment"
+            app:destination="@id/appInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appInfoFragment"
+        android:name="com.example.carparkingapp.ui.splash.AppInfoFragment"
+        android:label="fragment_app_info_fragmenr"
+        tools:layout="@layout/fragment_app_info_fragmenr" >
+        <action
+            android:id="@+id/action_appInfoFragment_to_authFragment"
+            app:destination="@id/authFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment"
+        android:name="com.example.carparkingapp.ui.splash.AuthFragment"
+        android:label="fragment_auth"
+        tools:layout="@layout/fragment_auth" />
+</navigation>

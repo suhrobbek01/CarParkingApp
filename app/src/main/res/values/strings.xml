@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">CarParkingApp</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="skip">Skip</string>
+    <string name="go">Go</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="default_web_client_id">166008055657-pvrohem39r25hav6ne8r227hnieu76bs.apps.googleusercontent.com</string>
+    <string name="home">Home</string>
+    <string name="profile">Profile</string>
+    <string name="MAPS_API_KEY">AIzaSyBMmkinIoVveVwgcr9MrWRLUIVM25S1lpA</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/booking_nav_graph"
+    app:startDestination="@id/chooseSpaceFragment">
+
+    <fragment
+        android:id="@+id/chooseSpaceFragment"
+        android:name="com.example.carparkingapp.ui.booking.ChooseSpaceFragment"
+        android:label="fragment_choose_space"
+        tools:layout="@layout/fragment_choose_space" >
+        <action
+            android:id="@+id/action_chooseSpaceFragment_to_parkingInfoFragment"
+            app:destination="@id/parkingInfoFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/parkingInfoFragment"
+        android:name="com.example.carparkingapp.ui.booking.ParkingInfoFragment"
+        android:label="fragment_parking_info"
+        tools:layout="@layout/fragment_parking_info" >
+        <action
+            android:id="@+id/action_parkingInfoFragment_to_paymentFragment"
+            app:destination="@id/paymentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentFragment"
+        android:name="com.example.carparkingapp.ui.booking.PaymentFragment"
+        android:label="fragment_payment"
+        tools:layout="@layout/fragment_payment" >
+        <action
+            android:id="@+id/action_paymentFragment_to_successFragment"
+            app:destination="@id/successFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/successFragment"
+        android:name="com.example.carparkingapp.ui.booking.SuccessFragment"
+        android:label="fragment_success"
+        tools:layout="@layout/fragment_success" />
+    <fragment
+        android:id="@+id/summaryFragment"
+        android:name="com.example.carparkingapp.ui.booking.SummaryFragment"
+        android:label="fragment_summary"
+        tools:layout="@layout/fragment_summary" />
+</navigation>
